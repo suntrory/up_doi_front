@@ -1,10 +1,18 @@
 
 
-async function fetchUser() {
+export async function fetchUser() {
     //   const [user, setUser] = useState([]);
     const response = await fetch('http://localhost:3333/user', { cache: 'default' });
     return response.json();
 }
+
+export async function addCount() {
+    //   const [user, setUser] = useState([]);
+    const response = await fetch('http://localhost:3333/addCount', { cache: 'default' });
+    return null;
+}
+
+// export async function 
 
 export async function MyComponent() {
     // const [data, setData] = useState([]);

@@ -5,11 +5,9 @@ import { MyComponent } from '@/app/action/surveydata';
 
 export default function Home() {
 
-  //const response = fetch
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <MyComponent/>
       <p style={{color: 'blue'}}></p>
       <h1 className="font-black text-3xl font-mono">แบบสอบถามเข้าร่วมประเพณีรับน้องขึ้นดอย</h1>
       <a href="./check_survey">
