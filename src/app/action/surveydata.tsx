@@ -2,13 +2,27 @@
 
 export async function fetchUser() {
     //   const [user, setUser] = useState([]);
-    const response = await fetch('http://localhost:3333/user', { cache: 'default' });
+    const response = await fetch('http://localhost:3333/user', { cache: 'default' ,
+    method: 'GET',
+    headers: {
+        "authorization": "b809vCwvtawRbsG0BmP1tWgnlXQypSKf",
+    },
+    
+    });
+
     return response.json();
 }
 
 export async function addCount() {
     //   const [user, setUser] = useState([]);
-    const response = await fetch('http://localhost:3333/addCount', { cache: 'default' });
+    const response = await fetch('http://localhost:3333/addCount', { cache: 'default' ,
+    method: 'GET',
+    headers: {
+        "authorization": "b809vCwvtawRbsG0BmP1tWgnlXQypSKf",
+    },
+    
+    });
+    
     return null;
 }
 

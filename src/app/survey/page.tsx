@@ -43,11 +43,12 @@ export default function Home() {
             body: JSON.stringify(dd),
             headers: {
                 "content-type": "application/json",
+                "authorization": "b809vCwvtawRbsG0BmP1tWgnlXQypSKf",
             },
         })
 
         const data = await response.json()
-        router.push('./')
+        //router.push('./')
         console.log('----------' + data);
     }
 
